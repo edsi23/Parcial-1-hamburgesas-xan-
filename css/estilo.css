@@ -1,0 +1,476 @@
+/* Patrones globales */
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; }
+
+/* Títulos principales y subtítulos: Barlow */
+h1, h6 { font-family: 'Open Sans', sans-serif; }
+
+h6, h1, figure {margin: 0;}
+
+header, main, section, footer, article,aside, figure, figcaption, nav, div{ display:block; }
+
+
+/* Menu cortina */
+
+aside#menu-cortina{ width: 290px;
+                    height: 100%;
+                    margin: 0;
+                    float: none;
+                    position: fixed;
+                    top: 0;
+                    right: -290px;
+                    z-index: 99999;
+                    background: #ede6492b;
+                    display: none;
+                }
+
+aside#menu-cortina a#abrir{     width: 35px;
+                                height: 35px;
+                                display: block;
+                                margin: 0;
+                                float: none;
+                                position: absolute;
+                                top: 90px;
+                                left: -35px;
+                                color: #ede649;
+                                text-align: center;
+                                padding: 9px 0;
+                                font-size: 1.4em;
+                                transition: 0.3s;
+                         }
+aside#menu-cortina a#abrir:hover{ transition: all 0.2s ease-in;
+                                    font-size: 2em;
+                                    ;
+                                }
+
+aside#menu-cortina a#cerrar{    width: 35px;
+                                height: 35px;
+                                display: none;
+                                margin: 0;
+                                float: none;
+                                position: absolute;
+                                top: 90px;
+                                left: -35px;
+                                color: #ede649;
+                                text-align: center;
+                                padding: 9px 0;
+                                font-size: 1.4em;
+                                transition: 0.3s; }
+aside#menu-cortina a#cerrar:hover{ transition: all 0.2s ease-in;
+                                    font-size: 2em;
+                                }
+
+aside#menu-cortina nav{ width: 80%;
+                        height: auto;
+                        margin: 10% auto;
+                        float: none;
+                        position: relative;
+                    }
+aside#menu-cortina nav a{   text-align: center;
+                            font-size: 1.3em;
+                            padding: 0;
+                            letter-spacing: 0.04em;
+                            text-transform: uppercase;
+                            color: white;
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                            margin: 0 auto 30px;
+                            float: none;
+                            position: relative;
+                            text-decoration: none;
+                         }
+aside#menu-cortina nav a:hover{ transition: all 0.2s ease-in;
+                                border-radius: 2em;
+                                background-color: #ede5495b;
+                                
+                                }
+
+
+
+/* Boton de Whatsapp */
+
+aside#boton-whatsapp{        width: 45px;
+    height: 45px;
+    margin: 0;
+    float: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+ }
+aside#boton-whatsapp a{    top: -38px;
+    right: 20px;
+    width: 50px;
+    height: 35px;
+    margin: 10px;
+    float: none;
+    position: relative;
+    display: block;
+    text-align: center;
+    color: #fff;
+    background: rgb(43 199 4);
+    font-size: 1.5em;
+    padding: 8px 0;
+    border-radius: 100%;
+    transition: all 0.3s ease-in; }
+aside#boton-whatsapp a:hover{ }
+
+
+/* Header */
+
+header{ width: 100%;
+        height: 90px;
+        margin: 0;
+        float: none;
+        position: fixed;
+        top: 0;
+        z-index: 99990;
+        background: #100404;
+        background-size: cover;
+        }
+header article{ width: 80%;
+                height: 100%;
+                margin: 0 AUTO;
+                float: none;
+                position: RELATIVE;
+                }
+
+header article figure{  width: 15%;
+                        height: 100%;
+                        margin: 0 AUTO;
+                        float: LEFT;
+                        position: RELATIVE;
+                        }
+header article figure a{    width: 130px;
+                            height: 100%;
+                            margin: 0 AUTO;
+                            float: none;
+                            position: RELATIVE;
+                            display: block;
+                            transition: all 0.2s ease-in;
+                            }
+header article figure a img{    width: 70%;
+                                height: 100%;
+                                margin: 0 AUTO;
+                                float: none;
+                                position: RELATIVE;
+                                display: block;
+                                }
+header article figure a:hover{  transform: scale(1.04);
+                                transition: all 0.2s ease-in;
+                                }
+
+header article nav{     width: 50%;
+                        height: 30%;
+                        margin: 30px 0;
+                        float: right;
+                        position: RELATIVE;
+                        }
+header article nav a{   width: auto;
+                        height: auto;
+                        margin: 0px 4%;
+                        float: left;
+                        position: RELATIVE;
+                        display: block;
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 100%;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        line-height: 1em;
+                        padding: 10px 0;
+                        letter-spacing: 0.05em;
+                        text-shadow: 0 0 5px #ffffff4f;
+                        transition: all 0.2s ease-in;
+                    }
+header article nav a:hover{     color: #ede649;
+                                text-shadow: 0 0 5px #ede649;
+                                transition: all 0.2s ease-in;
+
+                            }
+
+
+/* Main */
+
+main{   width: 100%;
+        height: auto;
+        margin: 90px auto 0 auto;
+        float: none;
+        position: relative;
+        background: #232323;}
+
+/* secciones del menu */
+main section.menu{  width: 100%;
+                    height: auto;
+                    margin: 0 auto ;
+                    float: none;
+                    position: relative;}
+main section.menu article{  width: 70%;
+                            height: auto;
+                            margin: 0 auto ;
+                            float: none;
+                            position: relative;}
+main section.menu article div.zona-titulos{ width: 100%;
+                                            height: auto;
+                                            margin: 0 auto;
+                                            float: none;
+                                            position: relative;
+                                         }
+main section.menu article div.zona-titulos h6{  text-align: center;
+                                                font-size: 1.3em;
+                                                padding: 90px 0 15px 0;
+                                                letter-spacing: 0.04em;
+                                                text-transform: uppercase;
+                                                color: white;
+                                            }
+main section.menu article div.zona-titulos h1{  text-align: center;
+                                                font-size: 2.5em;
+                                                padding: 30px 0 60px 0;
+                                                letter-spacing: -0.12em;
+                                                color: #ede649;
+                                                text-shadow: 0 0 5px #ede64985;
+                                                line-height: 1em;}
+
+main section.menu article div.zona-menu{    width: 100%;
+                                            height: auto;
+                                            margin: 0 auto;
+                                            float: none;
+                                            position: relative;
+                                        }
+main section.menu article div.zona-menu figure{     width: 46%;
+                                                    height: 100px;
+                                                    margin: 17px;
+                                                    float: none;
+                                                    position: relative;
+                                                    display: inline-block;
+                                                }
+main section.menu article div.zona-menu figure img{ width: 90px;
+                                                    height: 90px;
+                                                    display: block;
+                                                    margin: 0;
+                                                    float: left;
+                                                    position: relative;
+                                                    border-radius: 6px;
+                                                }
+main section.menu article div.zona-menu figure div.info-producto{   width: 75%;
+                                                                    height: 100px;
+                                                                    display: block;
+                                                                    margin: 0;
+                                                                    float: right;
+                                                                    position: relative;   
+                                                                }
+main section.menu article div.zona-menu figure div.info-producto h1{    text-align: center;
+                                                                        font-size: 1em;
+                                                                        padding: 0px 0 0px 0;
+                                                                        letter-spacing: -0.12em;
+                                                                        color: #ede649;
+                                                                        text-shadow: 0 0 5px #ede54921;
+                                                                        line-height: 1em;
+                                                                        }
+main section.menu article div.zona-menu figure div.info-producto p.texto-producto{      text-align: center;
+                                                                                        font-size: .8em;
+                                                                                        padding: 0 0 0 0;
+                                                                                        letter-spacing: 0.03em;
+                                                                                        color: #ffffff;
+                                                                                        line-height: 1.03em; 
+                                                                                    }
+main section.menu article div.zona-menu figure div.info-producto p.precio-producto{ text-align: center;
+                                                                                    font-size: 0.8em;
+                                                                                    padding: 0 0 0 0;
+                                                                                    letter-spacing: 0.03em;
+                                                                                    color: #ede649;
+                                                                                    text-shadow: 0 0 5px #ede64947;
+                                                                                    line-height: 1em;
+                                                                                    text-shadow: 0 0 5px #ede54921; 
+                                                                                }
+
+
+/* Adicionales */
+section#adicionales{   width: 100%;
+                height: auto;
+                margin: 0 auto ;
+                float: none;
+                position: relative;}
+section#adicionales article{   width: 70%;
+                        height: 300px;
+                        margin: 0 auto ;
+                        float: none;
+                        position: relative;}
+
+section#adicionales article div#adic{   width: 100%;
+                                        height: auto;
+                                        margin: 0 7%;
+                                        float: none;
+                                        position: relative; }
+section#adicionales article div#adic h1{ }
+
+section#adicionales article div#adic{ }
+section#adicionales article div#adic figure{     width: 21%;
+                                                height: 65px;
+                                                float: none;
+                                                display: inline-block;
+                                            }
+section#adicionales article div#adic figure h1{     text-align: center;
+                                                    font-size: 1.1em;
+                                                    padding: 0 0 0 0;
+                                                    letter-spacing: 0.03em;
+                                                    color: #ffffff;
+                                                    line-height: 1.03em}
+section#adicionales article div#adic figure p.precio-producto{  text-align: center;
+                                                                font-size: 1.1em;
+                                                                letter-spacing: -0.12em;
+                                                                color: #ede649;
+                                                                text-shadow: 0 0 5px #ede64985;
+                                                                line-height: 1em;
+                                                                margin: 5px;
+
+                                                                }
+
+/* footer */
+
+footer{ width: 100%;
+        height: 180px;
+        margin: 0;
+        float: none;
+        position: relative;
+        background: #100404;
+        background-size: cover;
+    }
+footer article{     width: 80%;
+                    height: 100%;
+                    float: none;
+                    position: relative;
+                    margin: 0px auto;
+                    }
+footer article div#img{    width: 180px;
+                        height: 75%;
+                        float: none;
+                        position: relative;
+                        margin: 0px auto;
+                        }
+footer article div#img img{     width: 100%;
+                            height: 100%;
+                            float: none;
+                            position: relative;
+                            margin: 10px auto;
+                            transition: all 0.2s ease-in;
+                            }
+footer article div#img img:hover{   transform: scale(1.04);
+                                    transition: all 0.2s ease-in;
+
+}
+
+footer article div#firma{   width: max-content;
+                            height: 20%;
+                            float: none;
+                            position: relative;
+                            margin: 10px auto;}
+footer article div#firma a{   width: auto;
+                        height: auto;
+                        margin: 0px;
+                        float: left;
+                        position: RELATIVE;
+                        display: block;
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 0.8em;
+                        font-weight: 600;
+                        line-height: 1em;
+                        padding: 10px 0;
+                        letter-spacing: 0.05em;
+                        text-shadow: 0 0 5px #ffffff4f;
+                        transition: all 0.2s ease-in;}
+footer article div#firma a:hover{     color: #ede649;
+                                text-shadow: 0 0 5px #ede649;
+                                transition: all 0.2s ease-in; 
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1199px){
+
+    header{ height: 80px;}
+    header article figure{  float: none;}
+    header article nav{ display: none;}
+    aside#menu-cortina{display: block;}
+    main{margin: 80px auto 0 auto;}
+    main section.menu article{  width: 80%;}
+
+
+
+
+
+
+
+main section.menu article div.zona-menu figure{     width: 100%;
+            height: auto;
+            margin: 0 auto 40px;
+            float: none;
+            position: relative;
+            display: block;
+        }
+main section.menu article div.zona-menu figure img{ width: 90px;
+            height: 90px;
+            display: block;
+            margin: 0 auto 15px;
+            float: none;
+            position: relative;
+            border-radius: 6px;
+        }
+main section.menu article div.zona-menu figure div.info-producto{   width: 100%;
+                            height: auto;
+                            display: block;
+                            margin: 0 auto;
+                            float: none;
+                            position: relative;   
+                        }
+main section.menu article div.zona-menu figure div.info-producto h1{    text-align: center;
+                                font-size: 1em;
+                                padding: 0px 0 0px 0;
+                                letter-spacing: -0.12em;
+                                color: #ede649;
+                                text-shadow: 0 0 5px #ede54921;
+                                line-height: 1em;
+                                margin: 0 auto 10px;
+                                float: none;
+                                }
+main section.menu article div.zona-menu figure div.info-producto p.texto-producto{      text-align: center;
+                                                font-size: .8em;
+                                                padding: 0 0 0 0;
+                                                letter-spacing: 0.03em;
+                                                color: #ffffff;
+                                                line-height: 1.03em; 
+                                            }
+main section.menu article div.zona-menu figure div.info-producto p.precio-producto{ text-align: center;
+                                            font-size: 0.8em;
+                                            padding: 0 0 0 0;
+                                            letter-spacing: 0.03em;
+                                            color: #ede649;
+                                            text-shadow: 0 0 5px #ede64947;
+                                            line-height: 1em;
+                                            text-shadow: 0 0 5px #ede54921;
+                                            margin: 0 auto; 
+                                        }
+    
+
+}
+@media only screen and (max-width: 499px){
+
+    
+}
+@media only screen and (max-width: 399px){
+
+    
+}
+
+
+
+
+
+
+
